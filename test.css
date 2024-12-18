@@ -1,0 +1,245 @@
+@import url("");
+body {
+    padding: 0;
+    margin: 0 !important;
+}
+.werk {
+    border: solid black 3px;
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+#werk {
+    border: 3px solid #000000;
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease, border 0.5s ease, font-family 0.5s ease;
+    /* font-family: arial; */
+}
+.ok {
+    border: solid black 1px;
+    width: 250px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+h2 {
+    text-align: center;
+    transition: color 0.5s ease;
+}
+h1 {
+    transition: color 0.5s ease;
+    font-size: 28px;
+}
+.BOX {
+    /* display: flex; */
+    position: relative;
+    width: 1255px;
+    /* border: solid red; */
+}
+.draggable {
+    position: absolute;
+    cursor: grab;
+}
+#ok1 {
+    display: block;
+}
+#ok2 {
+    position: absolute;
+    /* top: 240px; */
+}
+#ok3 {
+    position: absolute; 
+    /* top: 450px; */
+    /* left: 300px; */
+}
+.container {
+    position: absolute;
+    top: 550px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 98%;
+    /* border: solid red; */
+}
+.container > * {
+    margin: 0px;
+    padding: 0px;
+}
+#fSize, #title, #tekst, #inhoudp1Size, #iBreedte, #iHoogte, #pValue {
+    width: 70px;
+}
+#p1 {
+    font-size: 12px;
+    transition: color 0.5s ease;
+    text-align: center;
+    top: 60px;
+    position: absolute;
+}
+.Wcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: green solid; */
+    width: 1255px;
+}
+.werk .image {
+    position: relative;
+    top: 60px;
+    /* border: solid 1px; */
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.5s ease, bottom 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+#imageContainer {
+    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+.button-container {
+    position: absolute;
+    top: 300px;
+}
+#afbV {
+    height: 20px;
+}
+.button-container {
+    top: 350px;
+    left: 1270px;
+}
+.containing {
+    top: 0px;
+    position: absolute;
+    left: 1260px;
+}
+.list {
+    margin-left: 5px;
+    position: absolute;
+    top: 430px;
+}
+#stop {
+    display: none;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+#stop:hover {
+    background-color: rgb(186, 5, 5);
+    cursor: pointer;
+}
+.versie1 {
+    display: none;
+}
+/* .versie2 {
+    display: none; BLIJFT WEG VOOR NU
+} */
+#versionChooser {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#v1Choser, #v2Choser {
+    height: 100vh;
+    width: 50%;
+}
+#v1Choser {
+    background-color: lightgreen;
+}
+#v2Choser {
+    background-color: orange;
+}
+.v2Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    margin-top: 10px;
+    flex-direction: column;
+    padding: 5px;
+}
+.miniBox {
+    width: 10px;
+    height: 8px;
+    border: solid 1px;
+}
+.miniBoxContainerv1, .miniBoxContainerv2 {
+    display: flex;
+    flex-direction: row;
+}
+.miniBoxContainerv2 {
+    position: relative;
+    left: 5px;
+    transition: left 0.5s ease;
+}
+.selectBoxes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+}
+#kleurCode {
+    position: absolute;
+    top: 280px;
+}
+#zwart {
+    position: absolute;
+    top: 320px;
+    font-size: 10px;
+}
+#wit {
+    position: absolute;
+    top: 340px;
+    font-size: 10px;
+}
+#grijs {
+    position: absolute;
+    top: 360px;
+    font-size: 10px;
+}
+.LeftToRight {
+    position: absolute;
+    top: 250px;
+}
+.RightToLeft {
+    position: absolute;
+    top: 270px;
+}
+#zwart:hover, #wit:hover, #grijs:hover {
+    cursor:pointer;
+}
+.undo {
+    width: 10px;
+    height: 10px;
+}
+#undo {
+    width: 30px;
+    position: absolute;
+    left: 100px;
+}
+.dataBoxes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+    left: 180vh;
+}
+#kleurLoadKnop {
+    position: relative;
+    left: 6px;
+}
+#notiBlok {
+    position: absolute;
+    top: 400px;
+    /* left: 100px; */
+    width: 5px;
+    height: 5px;
+}
+li:hover {
+    cursor: pointer;
+    color: blue;
+}
